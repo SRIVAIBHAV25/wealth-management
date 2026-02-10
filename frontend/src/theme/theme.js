@@ -1,0 +1,1 @@
+import { createTheme } from '@mui/material/styles'; const theme=createTheme({palette:{mode:'dark',primary:{main:'#3b82f6'},background:{default:'#020617',paper:'#020617'}},shape:{borderRadius:12}}); export default theme;
