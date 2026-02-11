@@ -41,7 +41,7 @@ export default function Portfolio() {
   const loadInvestments = async () => {
     setLoading(true);
     try {
-      const res = await fetch(`${API}/portfolio`, {
+      const res = await fetch(`${API_BASE}/portfolio`, {
         headers: { Authorization: `Bearer ${token}` },
       });
       if (res.ok) {
