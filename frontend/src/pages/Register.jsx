@@ -14,7 +14,7 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import { Link as RouterLink, useNavigate } from "react-router-dom";
 import AuthCard from "../components/AuthCard";
 
-const API = import.meta.env.VITE_API_URL || "http://127.0.0.1:8000";
+const API_BASE = import.meta.env.VITE_API_BASE_URL;
 
 /* 🔒 INPUT STYLE LOCK (SAME AS LOGIN) */
 const pillInputSx = {
