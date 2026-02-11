@@ -60,7 +60,7 @@ export default function Simulations() {
   const runWhatIfReturns = async () => {
     setLoading(true);
     try {
-      const res = await fetch(`${API}/simulations/what-if/returns`, {
+      const res = await fetch(`${API_BASE}/simulations/what-if/returns`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
