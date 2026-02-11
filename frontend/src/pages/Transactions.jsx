@@ -34,7 +34,7 @@ export default function Transactions() {
   const loadTransactions = async () => {
     setLoading(true);
     try {
-      const res = await fetch(`${API}/transactions`, {
+      const res = await fetch(`${API_BASE}/transactions`, {
         headers: { Authorization: `Bearer ${token}` },
       });
       if (res.ok) {
