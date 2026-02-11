@@ -10,8 +10,8 @@ RUN npm ci
 COPY . .
 
 # Pass backend URL as build arg → becomes VITE env var at build time
-ARG VITE_API_URL
-ENV VITE_API_URL=$VITE_API_URL
+ARG VITE_API_BASE_URL
+ENV VITE_API_BASE_URL=$VITE_API_BASE_URL
 
 RUN npm run build
 
