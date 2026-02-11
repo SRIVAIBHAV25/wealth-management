@@ -18,7 +18,7 @@ import SimulationsModal from '../modals/SimulationsModal';
 import RecommendationsModal from '../modals/RecommendationsModal';
 import ReportsModal from '../modals/ReportsModal';
 
-const API = import.meta.env.VITE_API_URL || 'http://127.0.0.1:8000';
+const API_BASE = import.meta.env.VITE_API_BASE_URL;
 
 export default function Dashboard() {
   const [summary, setSummary] = useState(null);
