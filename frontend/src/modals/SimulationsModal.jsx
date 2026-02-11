@@ -27,7 +27,7 @@ export default function SimulationsModal({ open, onClose }) {
   const runSimulation = async () => {
     setLoading(true);
     try {
-      const res = await fetch(`${API}/simulations`, {
+      const res = await fetch(`${API_BASE}/simulations`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
