@@ -9,7 +9,7 @@ import Tab from '@mui/material/Tab';
 import Tabs from '@mui/material/Tabs';
 import { LineChart } from '@mui/x-charts/LineChart';
 
-const API = import.meta.env.VITE_API_URL || 'http://127.0.0.1:8000';
+const API_BASE = import.meta.env.VITE_API_BASE_URL;
 
 export default function Simulations() {
   const [tab, setTab] = useState(0);
