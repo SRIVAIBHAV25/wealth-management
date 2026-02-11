@@ -45,7 +45,7 @@ steps:
       - -t
       - "gcr.io/$PROJECT_ID/wealth-frontend:latest"
       - --build-arg
-      - VITE_API_BASE_URL=${_BACKEND_URL}
+      - "VITE_API_BASE_URL=${_BACKEND_URL}"
       - ./frontend
 
 
