@@ -45,7 +45,7 @@ steps:
       - -t
       - "gcr.io/$PROJECT_ID/wealth-frontend:latest"
       - --build-arg
-      - "VITE_API_BASE_URL=${_BACKEND_URL}"
+      - "VITE_API_URL=${_BACKEND_URL}"
       - ./frontend
 
   - name: "gcr.io/cloud-builders/docker"
@@ -70,8 +70,7 @@ steps:
 
 # Pass your backend URL as a substitution variable when triggering this build
 substitutions:
-  _BACKEND_URL: "https://YOUR_BACKEND_URL.a.run.app"
-
+  _BACKEND_URL: "https://wealth-backend-142444993823.asia-south1.run.app"
 images:
   - "gcr.io/$PROJECT_ID/wealth-backend:$COMMIT_SHA"
   - "gcr.io/$PROJECT_ID/wealth-frontend:$COMMIT_SHA"
