@@ -35,7 +35,7 @@ export default function RecommendationsModal({ open, onClose }) {
   const generateRecommendations = async () => {
     setLoading(true);
     try {
-      await fetch(`${API}/recommendations/generate`, {
+      await fetch(`${API_BASE}/recommendations/generate`, {
         method: 'POST',
         headers: { Authorization: `Bearer ${token}` },
       });
