@@ -28,7 +28,7 @@ import Tooltip from '@mui/material/Tooltip';
 import Chip from '@mui/material/Chip';
 import Alert from '@mui/material/Alert';
 
-const API = import.meta.env.VITE_API_URL || "http://127.0.0.1:8000";
+const API_BASE = import.meta.env.VITE_API_BASE_URL;
 
 export default function Goals() {
   const [goals, setGoals] = useState([]);
