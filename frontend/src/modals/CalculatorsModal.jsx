@@ -58,7 +58,7 @@ export default function CalculatorsModal({ open, onClose }) {
   const calculateRetirement = async () => {
     setLoading(true);
     try {
-      const res = await fetch(`${API}/calculators/retirement`, {
+      const res = await fetch(`${API_BASE}/calculators/retirement`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
