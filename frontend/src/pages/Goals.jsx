@@ -55,7 +55,7 @@ export default function Goals() {
 
   const loadGoals = async () => {
     try {
-      const res = await fetch(`${API}/goals`, {
+      const res = await fetch(`${API_BASE}/goals`, {
         headers: { Authorization: `Bearer ${token}` },
       });
       if (res.ok) {
