@@ -20,7 +20,7 @@ export default function Reports() {
   const downloadReport = async (endpoint, filename, reportKey) => {
     setDownloading(prev => ({ ...prev, [reportKey]: true }));
     try {
-      const res = await fetch(`${API}${endpoint}`, {
+      const res = await fetch(`${API_BASE}${endpoint}`, {
         headers: { Authorization: `Bearer ${token}` },
       });
       
