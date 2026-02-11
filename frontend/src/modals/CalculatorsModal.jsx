@@ -12,7 +12,7 @@ import Button from '@mui/material/Button';
 import Grid from '@mui/material/Grid';
 import Paper from '@mui/material/Paper';
 
-const API = import.meta.env.VITE_API_URL || 'http://127.0.0.1:8000';
+const API_BASE = import.meta.env.VITE_API_BASE_URL;
 
 export default function CalculatorsModal({ open, onClose }) {
   const [tab, setTab] = useState(0);
