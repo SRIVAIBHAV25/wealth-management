@@ -21,7 +21,7 @@ export default function Recommendations() {
   const loadRecommendations = async () => {
     setLoading(true);
     try {
-      const res = await fetch(`${API}/recommendations`, {
+      const res = await fetch(`${API_BASE}/recommendations`, {
         headers: { Authorization: `Bearer ${token}` },
       });
       if (res.ok) {
