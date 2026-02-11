@@ -46,7 +46,7 @@ export default function Investments() {
   const refreshPrices = async () => {
     setRefreshing(true);
     try {
-      const res = await fetch(`${API}/portfolio/refresh-prices`, {
+      const res = await fetch(`${API_BASE}/portfolio/refresh-prices`, {
         method: 'POST',
         headers: { Authorization: `Bearer ${token}` },
       });
