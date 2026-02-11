@@ -42,7 +42,7 @@ export default function InvestmentSimulations() {
     setLoading(true);
     setResults(null);
     try {
-      const res = await fetch(`${API}/investments/simulate-growth`, {
+      const res = await fetch(`${API_BASE}/investments/simulate-growth`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
