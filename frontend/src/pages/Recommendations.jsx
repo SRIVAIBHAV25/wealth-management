@@ -8,7 +8,7 @@ import { PieChart } from '@mui/x-charts/PieChart';
 import AutoAwesomeIcon from '@mui/icons-material/AutoAwesome';
 import TrendingUpIcon from '@mui/icons-material/TrendingUp';
 
-const API = import.meta.env.VITE_API_URL || 'http://127.0.0.1:8000';
+const API_BASE = import.meta.env.VITE_API_BASE_URL;
 
 export default function Recommendations() {
   const [recommendations, setRecommendations] = useState([]);
