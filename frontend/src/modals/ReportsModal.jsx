@@ -17,7 +17,7 @@ export default function ReportsModal({ open, onClose }) {
 
   const downloadReport = async (endpoint, filename) => {
     try {
-      const res = await fetch(`${API}${endpoint}`, {
+      const res = await fetch(`${API_BASE}${endpoint}`, {
         headers: { Authorization: `Bearer ${token}` },
       });
       if (res.ok) {
