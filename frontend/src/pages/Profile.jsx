@@ -20,7 +20,7 @@ import Divider from '@mui/material/Divider';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 
-const API = import.meta.env.VITE_API_URL || 'http://127.0.0.1:8000';
+const API_BASE = import.meta.env.VITE_API_BASE_URL;
 
 // Multicolor profile avatar component with gradient
 const MultiColorProfileAvatar = ({ name, size = 120 }) => {
