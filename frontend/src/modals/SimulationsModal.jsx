@@ -11,7 +11,7 @@ import Grid from '@mui/material/Grid';
 import Paper from '@mui/material/Paper';
 import { PieChart } from '@mui/x-charts/PieChart';
 
-const API = import.meta.env.VITE_API_URL || 'http://127.0.0.1:8000';
+const API_BASE = import.meta.env.VITE_API_BASE_URL;
 
 export default function SimulationsModal({ open, onClose }) {
   const [loading, setLoading] = useState(false);
