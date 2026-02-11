@@ -36,7 +36,7 @@ steps:
       - --set-secrets=DATABASE_URL=DATABASE_URL:latest,REDIS_URL=REDIS_URL:latest,SECRET_KEY=SECRET_KEY:latest,ALPHA_VANTAGE_API_KEY=ALPHA_VANTAGE_API_KEY:latest
 
   # ── Frontend ──────────────────────────────────────────────────────────────────
-  - name: "gcr.io/cloud-builders/docker"
+    - name: "gcr.io/cloud-builders/docker"
     id: "build-frontend"
     args:
       - build
@@ -45,8 +45,9 @@ steps:
       - -t
       - "gcr.io/$PROJECT_ID/wealth-frontend:latest"
       - --build-arg
-        "VITE_API_BASE_URL=${_BACKEND_URL}"
+      - VITE_API_BASE_URL=${_BACKEND_URL}
       - ./frontend
+
 
   - name: "gcr.io/cloud-builders/docker"
     id: "push-frontend"
