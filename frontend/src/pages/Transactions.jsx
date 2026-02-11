@@ -16,7 +16,7 @@ import DeleteIcon from "@mui/icons-material/Delete";
 import RefreshIcon from "@mui/icons-material/Refresh";
 import AccountBalanceWalletIcon from "@mui/icons-material/AccountBalanceWallet";
 
-const API = import.meta.env.VITE_API_URL || "http://127.0.0.1:8000";
+const API_BASE = import.meta.env.VITE_API_BASE_URL;
 
 export default function Transactions() {
   const [transactions, setTransactions] = useState([]);
