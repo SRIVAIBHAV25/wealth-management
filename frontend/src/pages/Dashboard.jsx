@@ -35,7 +35,7 @@ export default function Dashboard() {
   const loadDashboard = async () => {
     setLoading(true);
     try {
-      const res = await fetch(`${API}/dashboard/summary`, {
+      const res = await fetch(`${API_BASE}/dashboard/summary`, {
         headers: { Authorization: `Bearer ${token}` },
       });
       if (res.ok) {
